@@ -3,8 +3,10 @@
 This is an ESP32 & Tasmota based modular system to control the feeding water pump that is delivering water from the remote public water pipe source to your house reservoir in case the pressure in the public pipe is not high enough or unstable.
 
 # Block Diagrams
-![High Level Diagram] (water_feed_high_level)
-![Detailed diagram] (Water_feed_detailed.png)
+## High Level Diagram
+![High Level Diagram](/water_feed_high_level.png)
+## Detailed Diagram
+![Detailed diagram](/water_feed_detailed.png)
 
 # Electronic Modules Used
 
@@ -12,7 +14,7 @@ This is an ESP32 & Tasmota based modular system to control the feeding water pum
 * DC-DC converter (24V->5V)
 * DC-DC converter (5V->12V)
 
-* ESP32 dev board
+* ESP32 dev board - e.g. wroom32
 
 * XDB305 Pressure sensor 0-0.6Mpa, 4-20mA
 * SR04 Ultrasound water level sensor
@@ -68,5 +70,6 @@ This is an ESP32 & Tasmota based modular system to control the feeding water pum
 
 # Sources
 
-* [Analog input reading /non/linearity] (https://github.com/espressif/arduino-esp32/issues/92)
-* [ESP-wroom-32 pinout] (https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
+* [Analog input reading (non)linearity](https://github.com/espressif/arduino-esp32/issues/92)
+* [ESP-wroom-32 pinout](https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
+* [AA684 current to voltage converter](https://www.lazada.co.th/products/1-aa684-current-to-voltage-module-04-20ma-to-0-33v-5v-10v-voltage-transmitter-signal-i4423206581-s17686736306.html)
