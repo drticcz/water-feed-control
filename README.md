@@ -68,3 +68,5 @@ This is an ESP32 & Tasmota based modular system to control the feeding water pum
 
 # Sources
 
+* [Analog input reading /non/linearity] (https://github.com/espressif/arduino-esp32/issues/92)
+* [ESP-wroom-32 pinout] (https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
