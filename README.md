@@ -24,20 +24,20 @@ This is an ESP32 & Tasmota based modular system to control the feeding water pum
 * Two channel 3.3V relay module
 
 
-## XDB305 Pressure to current table
+## XDB305 Pressure to voltage table
 
 | Pressure (bar) | Voltage |
-| -------- | ------- |
-| 6 | 2,7 |
-| 5,5 | 2,6 |
-| 5 | 2,3 |
-| 4,5 | 2,15 |
-| 4 | 1,8 |
-| 3,5 | 1,58 |
-| 3 | 1,3 |
-| 2,5 | 1,1 |
-| 2 | 0,88 |
-| 1 | 0,45 |
+| ---- | ---- |
+| 6    |  2,7 |
+| 5,5  |  2,6 |
+| 5    |  2,3 |
+| 4,5  | 2,15 |
+| 4    |  1,8 |
+| 3,5  | 1,58 |
+| 3    | 1,3  |
+| 2,5  | 1,1  |
+| 2    | 0,88 |
+| 1    | 0,45 |
 
 
 ## AA684 Current to Voltage Module
@@ -68,8 +68,14 @@ This is an ESP32 & Tasmota based modular system to control the feeding water pum
 * 0--10.0V Range: J1 1,2 feet short, 3,4 feet off
 
 
+# Lessons learned
+* The SR04 ultrasound sensor is not suitable for monitoring closed water tanks as eventually, condensed water vapor settle on it and it starts misreading heavily. Use the more expensive but reliable submersible sensor instead.
+
 # Sources
 
 * [Analog input reading (non)linearity](https://github.com/espressif/arduino-esp32/issues/92)
 * [ESP-wroom-32 pinout](https://randomnerdtutorials.com/esp32-adc-analog-read-arduino-ide/)
 * [AA684 current to voltage converter](https://www.lazada.co.th/products/1-aa684-current-to-voltage-module-04-20ma-to-0-33v-5v-10v-voltage-transmitter-signal-i4423206581-s17686736306.html)
+* [Tasmota](https://github.com/arendst/Tasmota)
+* [Berry Scripting introduction](https://tasmota.github.io/docs/Berry/)
+* [Berry full documentation](https://berry.readthedocs.io/en/latest/)
